@@ -70,8 +70,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Galería de iconos'),
+        title: Text(
+          'Galería de iconos',
+          style: TextStyle(fontSize: 24),
+        ),
         centerTitle: true,
+        backgroundColor: Color(0xff731F3E),
       ),
       body: buildList(),
     );
@@ -79,34 +83,37 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget buildList() {
     List<Icon> iconics = [
-      Icon(Typicons.attention, size: 46),
-      Icon(Fontelico.emo_wink, size: 46),
-      Icon(Linecons.globe, size: 46),
-      Icon(Linecons.globe, size: 46),
-      Icon(Elusive.group, size: 46),
-      Icon(Typicons.attention, size: 46),
-      Icon(Fontelico.emo_wink, size: 46),
-      Icon(Linecons.globe, size: 46),
-      Icon(Linecons.globe, size: 46),
-      Icon(Elusive.group, size: 46),
-      Icon(Typicons.attention, size: 46),
-      Icon(Fontelico.emo_wink, size: 46),
-      Icon(Linecons.globe, size: 46),
-      Icon(Linecons.globe, size: 46),
-      Icon(Elusive.group, size: 46),
+      Icon(Typicons.attention, size: 46, color: Colors.white),
+      Icon(Fontelico.emo_wink, size: 46, color: Colors.white),
+      Icon(Linecons.globe, size: 46, color: Colors.white),
+      Icon(Linecons.globe, size: 46, color: Colors.white),
+      Icon(Elusive.group, size: 46, color: Colors.white),
+      Icon(Typicons.attention, size: 46, color: Colors.white),
+      Icon(Fontelico.emo_wink, size: 46, color: Colors.white),
+      Icon(Linecons.globe, size: 46, color: Colors.white),
+      Icon(Linecons.globe, size: 46, color: Colors.white),
+      Icon(Elusive.group, size: 46, color: Colors.white),
+      Icon(Typicons.attention, size: 46, color: Colors.white),
+      Icon(Fontelico.emo_wink, size: 46, color: Colors.white),
+      Icon(Linecons.globe, size: 46, color: Colors.white),
+      Icon(Linecons.globe, size: 46, color: Colors.white),
+      Icon(Elusive.group, size: 46, color: Colors.white),
     ];
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       child: GridView.builder(
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+        ),
         itemCount: iconics.length,
         itemBuilder: (context, index) {
           final iconic = iconics[index];
 
           return GridTile(
               child: CircleAvatar(
-                  backgroundColor: Colors.redAccent, child: iconics[index]));
+                  backgroundColor: Color(0xff833F4C), child: iconics[index]));
         },
       ),
     );
