@@ -43,37 +43,6 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
-  List<Icon> iconics = [
-    Icon(Brandico.amex, size: 46),
-    Icon(Elusive.edit_circled, size: 46),
-    Icon(Entypo.vimeo_circled, size: 46),
-    Icon(FontAwesome.hand_peace_o, size: 46),
-    Icon(Fontelico.firefox, size: 46),
-    Icon(Iconic.sun, size: 46),
-    Icon(LineariconsFree.moon, size: 46),
-    Icon(Linecons.fire, size: 46),
-    Icon(Maki.harbor, size: 46),
-    Icon(Meteocons.clouds, size: 46),
-    Icon(MfgLabs.facebook_circled, size: 46),
-    Icon(ModernPictograms.right_dir, size: 46),
-    Icon(Octicons.mortar_board, size: 46),
-    Icon(RpgAwesome.perspective_dice_three, size: 46),
-    Icon(Typicons.linkedin, size: 46),
-    Icon(WebSymbols.cog, size: 46),
-    Icon(Zocial.ninetyninedesigns, size: 46),
-    Icon(Fontelico.firefox, size: 46),
-    Icon(Iconic.sun, size: 46),
-    Icon(LineariconsFree.moon, size: 46),
-    Icon(Linecons.fire, size: 46),
-    Icon(Maki.harbor, size: 46),
-    Icon(Meteocons.clouds, size: 46),
-    Icon(MfgLabs.facebook_circled, size: 46),
-    Icon(ModernPictograms.right_dir, size: 46),
-    Icon(Octicons.mortar_board, size: 46),
-    Icon(RpgAwesome.perspective_dice_three, size: 46),
-    Icon(Typicons.linkedin, size: 46),
-  ];
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -158,6 +127,15 @@ class _MyHomePageState extends State<MyHomePage> {
       Icon(FontAwesome.folder_open_empty, size: 46, color: Colors.white),
       Icon(Iconic.folder, size: 46, color: Colors.white),
       Icon(Iconic.folder_empty, size: 46, color: Colors.white),
+      Icon(FontAwesome5.folder, size: 46, color: Colors.white),
+      Icon(FontAwesome5.folder_minus, size: 46, color: Colors.white),
+      Icon(FontAwesome5.folder_open, size: 46, color: Colors.white),
+      Icon(FontAwesome5.folder_plus, size: 46, color: Colors.white),
+      Icon(Icons.folder_open, size: 46, color: Colors.white),
+      Icon(Icons.folder_special_rounded, size: 46, color: Colors.white),
+      Icon(Icons.group, size: 46, color: Colors.white),
+      Icon(Icons.person, size: 46, color: Colors.white),
+      Icon(FontAwesome5.hand_holding_usd, size: 46, color: Colors.white),
     ];
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
